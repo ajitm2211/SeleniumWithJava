@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="8" passed="8" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-07-14T22:15:32 IST" name="Parallel Suite" finished-at="2025-07-14T22:16:05 IST" duration-ms="33324">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.UITestRunner@55fe41ea]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.UITestRunner@c86b9e3]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.UITestRunner@3af9c5b7]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.APITestRunner@37883b97]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2025-07-14T22:15:32 IST" name="UI - Edge" finished-at="2025-07-14T22:15:51 IST" duration-ms="19109">
+      <class name="runners.UITestRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runners.UITestRunner@3af9c5b7]" started-at="2025-07-14T22:15:32 IST" name="setUpClass" finished-at="2025-07-14T22:15:34 IST" duration-ms="1757" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@72cde7cc]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.UITestRunner@3af9c5b7]" started-at="2025-07-14T22:15:34 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-07-14T22:15:49 IST" duration-ms="15529" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Open login page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login Functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="flushReport()[pri:0, instance:runners.UITestRunner@3af9c5b7]" started-at="2025-07-14T22:15:49 IST" name="flushReport" finished-at="2025-07-14T22:15:51 IST" duration-ms="1441" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flushReport -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runners.UITestRunner@3af9c5b7]" started-at="2025-07-14T22:15:51 IST" name="tearDownClass" finished-at="2025-07-14T22:15:51 IST" duration-ms="267" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- runners.UITestRunner -->
+    </test> <!-- UI - Edge -->
+    <test started-at="2025-07-14T22:15:32 IST" name="UI - Chrome" finished-at="2025-07-14T22:15:51 IST" duration-ms="19024">
+      <class name="runners.UITestRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runners.UITestRunner@55fe41ea]" started-at="2025-07-14T22:15:32 IST" name="setUpClass" finished-at="2025-07-14T22:15:34 IST" duration-ms="1761" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@1eb5174b]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.UITestRunner@55fe41ea]" started-at="2025-07-14T22:15:34 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-07-14T22:15:49 IST" duration-ms="15678" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Open login page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login Functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="flushReport()[pri:0, instance:runners.UITestRunner@55fe41ea]" started-at="2025-07-14T22:15:49 IST" name="flushReport" finished-at="2025-07-14T22:15:51 IST" duration-ms="1274" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flushReport -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runners.UITestRunner@55fe41ea]" started-at="2025-07-14T22:15:51 IST" name="tearDownClass" finished-at="2025-07-14T22:15:51 IST" duration-ms="161" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- runners.UITestRunner -->
+    </test> <!-- UI - Chrome -->
+    <test started-at="2025-07-14T22:15:32 IST" name="UI - Firefox" finished-at="2025-07-14T22:16:02 IST" duration-ms="30151">
+      <class name="runners.UITestRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runners.UITestRunner@c86b9e3]" started-at="2025-07-14T22:15:32 IST" name="setUpClass" finished-at="2025-07-14T22:15:34 IST" duration-ms="1758" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@67080771]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.UITestRunner@c86b9e3]" started-at="2025-07-14T22:15:34 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-07-14T22:16:02 IST" duration-ms="28007" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Open login page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login Functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="flushReport()[pri:0, instance:runners.UITestRunner@c86b9e3]" started-at="2025-07-14T22:16:02 IST" name="flushReport" finished-at="2025-07-14T22:16:02 IST" duration-ms="194" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flushReport -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runners.UITestRunner@c86b9e3]" started-at="2025-07-14T22:16:02 IST" name="tearDownClass" finished-at="2025-07-14T22:16:02 IST" duration-ms="90" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- runners.UITestRunner -->
+    </test> <!-- UI - Firefox -->
+    <test started-at="2025-07-14T22:15:51 IST" name="API - Only" finished-at="2025-07-14T22:16:05 IST" duration-ms="14169">
+      <class name="runners.APITestRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runners.APITestRunner@37883b97]" started-at="2025-07-14T22:15:51 IST" name="setUpClass" finished-at="2025-07-14T22:15:51 IST" duration-ms="59" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@5fd4f8f5]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.APITestRunner@37883b97]" started-at="2025-07-14T22:15:51 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-07-14T22:16:02 IST" duration-ms="10982" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["GET request - Fetch user by ID"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Complete REST API automation with basic and advanced examples"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.APITestRunner@37883b97]" started-at="2025-07-14T22:16:02 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-07-14T22:16:03 IST" duration-ms="916" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["POST request - Create a new post"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Complete REST API automation with basic and advanced examples"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.APITestRunner@37883b97]" started-at="2025-07-14T22:16:03 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-07-14T22:16:04 IST" duration-ms="890" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["PUT request - Update an existing post"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Complete REST API automation with basic and advanced examples"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.APITestRunner@37883b97]" started-at="2025-07-14T22:16:04 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-07-14T22:16:05 IST" duration-ms="627" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["DELETE request - Delete a post"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Complete REST API automation with basic and advanced examples"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.APITestRunner@37883b97]" started-at="2025-07-14T22:16:05 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-07-14T22:16:05 IST" duration-ms="628" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["GET request - Handle JSON array and validate multiple items"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Complete REST API automation with basic and advanced examples"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="flushReport()[pri:0, instance:runners.APITestRunner@37883b97]" started-at="2025-07-14T22:16:05 IST" name="flushReport" finished-at="2025-07-14T22:16:05 IST" duration-ms="38" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flushReport -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runners.APITestRunner@37883b97]" started-at="2025-07-14T22:16:05 IST" name="tearDownClass" finished-at="2025-07-14T22:16:05 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- runners.APITestRunner -->
+    </test> <!-- API - Only -->
+  </suite> <!-- Parallel Suite -->
+</testng-results>

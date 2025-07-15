@@ -1,0 +1,11 @@
+<suite name="RetrySuite" parallel="tests" thread-count="2">
+  <listeners>
+    <listener class-name="utils.RetryListener" />
+  </listeners>
+
+  <test name="RetryTest">
+    <classes>
+      <class name="runners.RetryCucumberRunner"/>
+    </classes>
+  </test>
+</suite>

@@ -1,0 +1,130 @@
+//
+
+
+List<WindowHandles>wn=driver.getWindowhandles();
+
+
+int indexes=0;
+for(each window in wn)
+{
+System.out.println("Window index:"+i);
+
+i++;
+
+if(i==47)
+{
+driver.SwitchTo(window[i]);
+//OPerations 
+
+driver.SwitchTo(window[0]);
+
+}
+
+
+}
+
+//----------------------------
+
+my name is Alexander 
+expected output : my nam# is Al##xand###r //e=1 # e=2 ## e3
+
+String Input="my name is Alexander";
+String result="";
+String opeeration=Input.Split(" ");
+int index=0;
+for(int i=0;i<opeeration.Length;i++)
+{
+String data=opeeration[i];
+for(int j=0;j<data.Length();j++)
+{
+  if(opeeration[j]).equals('e'))
+  {
+  index++;
+    for(int k=index;i<index;k++)
+    {
+     result=result+(opeeration[i]).replace('#'))
+    }
+  
+else
+{
+result=result+opeeration[j];
+}
+}
+
+
+
+
+----------------
+
+get request -----status code 200, string as successful
+
+
+
+Response response =given().log().all().
+                   when().get("https://xample.com/post1").
+                   then().Statuscode(200).log().all();
+
+Boolean message= response.jsonpath().getString("[0].address");
+
+--
+
+
+{
+
+  "outputData": {
+
+    "data": {
+
+      "leaveList": [
+
+        {
+
+          "leaveTypeID": 1,
+
+          "leaveBalance": 2
+
+        },
+
+        {
+
+          "leaveTypeID": 2,
+
+          "leaveBalance": 9
+
+        }
+
+      ]
+
+    }
+
+  }
+
+}
+
+ 
+Response response =given().log().all().
+                   when().get("https://xample.com/post1").
+                   then().Statuscode(200).log().all();
+
+
+
+outputData.data.leaveList
+
+
+String message= response.jsonpath().getString("outputData.data.leaveList");
+
+
+Int leavebalance= message.content("leaveTypeID": 2")
+
+.....................
+
+
+
+
+
+
+
+
+
+
+                   

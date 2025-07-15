@@ -1,0 +1,178 @@
+<html>
+<head>
+<title>TestNG:  Edge</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Edge</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>1/5/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sun Jul 13 18:09:52 IST 2025</td>
+</tr>
+<tr><td>Total time:</td><td>32 seconds (32935 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='runners.TestNGCucumberRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGCucumberRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "DELETE request - Delete a post", "Complete REST API automation with basic and advanced examples"</td>
+<td><div><pre>java.lang.AssertionError: Status code mismatch! expected [200] but found [201]
+	at stepdefinitions.RestApiStepDefinitions.validateStatusCode(RestApiStepDefinitions.java:67)
+	at ✽.the response status code should be 200(file:///C:/DDrive/Study%20-Home%20Learning/JavaSelenium/TestNGCucumberParallelMultiBrowserExtentReport/src/test/resources/features/RESTAPISCENARIOS.feature:25)
+... Removed 6 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace491606477", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace491606477'><pre>java.lang.AssertionError: Status code mismatch! expected [200] but found [201]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:1419)
+	at org.testng.Assert.assertEquals(Assert.java:1383)
+	at stepdefinitions.RestApiStepDefinitions.validateStatusCode(RestApiStepDefinitions.java:67)
+	at ✽.the response status code should be 200(file:///C:/DDrive/Study%20-Home%20Learning/JavaSelenium/TestNGCucumberParallelMultiBrowserExtentReport/src/test/resources/features/RESTAPISCENARIOS.feature:25)
+</pre></div></td>
+<td>23</td>
+<td>runners.TestNGCucumberRunner@6db9f5a4</td></tr>
+<tr>
+<td title='runners.TestNGCucumberRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGCucumberRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "POST request - Create a new post", "Complete REST API automation with basic and advanced examples"</td>
+<td><div><pre>java.lang.AssertionError: Field value mismatch for title expected [My Post] but found [Updated Post]
+	at stepdefinitions.RestApiStepDefinitions.validateResponseField(RestApiStepDefinitions.java:73)
+	at ✽.the response field &quot;title&quot; should be &quot;My Post&quot;(file:///C:/DDrive/Study%20-Home%20Learning/JavaSelenium/TestNGCucumberParallelMultiBrowserExtentReport/src/test/resources/features/RESTAPISCENARIOS.feature:15)
+... Removed 5 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace290057963", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace290057963'><pre>java.lang.AssertionError: Field value mismatch for title expected [My Post] but found [Updated Post]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at stepdefinitions.RestApiStepDefinitions.validateResponseField(RestApiStepDefinitions.java:73)
+	at ✽.the response field &quot;title&quot; should be &quot;My Post&quot;(file:///C:/DDrive/Study%20-Home%20Learning/JavaSelenium/TestNGCucumberParallelMultiBrowserExtentReport/src/test/resources/features/RESTAPISCENARIOS.feature:15)
+</pre></div></td>
+<td>23</td>
+<td>runners.TestNGCucumberRunner@6db9f5a4</td></tr>
+<tr>
+<td title='runners.TestNGCucumberRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGCucumberRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "PUT request - Update an existing post", "Complete REST API automation with basic and advanced examples"</td>
+<td><div><pre>java.lang.AssertionError: Status code mismatch! expected [200] but found [201]
+	at stepdefinitions.RestApiStepDefinitions.validateStatusCode(RestApiStepDefinitions.java:67)
+	at ✽.the response status code should be 200(file:///C:/DDrive/Study%20-Home%20Learning/JavaSelenium/TestNGCucumberParallelMultiBrowserExtentReport/src/test/resources/features/RESTAPISCENARIOS.feature:20)
+... Removed 6 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace248384149", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace248384149'><pre>java.lang.AssertionError: Status code mismatch! expected [200] but found [201]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:1419)
+	at org.testng.Assert.assertEquals(Assert.java:1383)
+	at stepdefinitions.RestApiStepDefinitions.validateStatusCode(RestApiStepDefinitions.java:67)
+	at ✽.the response status code should be 200(file:///C:/DDrive/Study%20-Home%20Learning/JavaSelenium/TestNGCucumberParallelMultiBrowserExtentReport/src/test/resources/features/RESTAPISCENARIOS.feature:20)
+</pre></div></td>
+<td>23</td>
+<td>runners.TestNGCucumberRunner@6db9f5a4</td></tr>
+<tr>
+<td title='runners.TestNGCucumberRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGCucumberRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "GET request - Handle JSON array and validate multiple items", "Complete REST API automation with basic and advanced examples"</td>
+<td><div><pre>java.lang.AssertionError: Array path returned null: address.city expected object to not be null
+	at stepdefinitions.RestApiStepDefinitions.validateArrayFieldContains(RestApiStepDefinitions.java:99)
+	at ✽.the array field &quot;address.city&quot; should contain &quot;Gwenborough&quot; and &quot;Wisokyburgh&quot;(file:///C:/DDrive/Study%20-Home%20Learning/JavaSelenium/TestNGCucumberParallelMultiBrowserExtentReport/src/test/resources/features/RESTAPISCENARIOS.feature:29)
+... Removed 2 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2026299834", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2026299834'><pre>java.lang.AssertionError: Array path returned null: address.city expected object to not be null
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.assertNotNull(Assert.java:1484)
+	at stepdefinitions.RestApiStepDefinitions.validateArrayFieldContains(RestApiStepDefinitions.java:99)
+	at ✽.the array field &quot;address.city&quot; should contain &quot;Gwenborough&quot; and &quot;Wisokyburgh&quot;(file:///C:/DDrive/Study%20-Home%20Learning/JavaSelenium/TestNGCucumberParallelMultiBrowserExtentReport/src/test/resources/features/RESTAPISCENARIOS.feature:29)
+</pre></div></td>
+<td>18</td>
+<td>runners.TestNGCucumberRunner@6db9f5a4</td></tr>
+<tr>
+<td title='runners.TestNGCucumberRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGCucumberRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "GET request - Fetch user by ID", "Complete REST API automation with basic and advanced examples"</td>
+<td><div><pre>java.lang.AssertionError: Field value mismatch for address.city expected [Gwenborough] but found [null]
+	at stepdefinitions.RestApiStepDefinitions.validateResponseField(RestApiStepDefinitions.java:73)
+	at ✽.the response field &quot;address.city&quot; should be &quot;Gwenborough&quot;(file:///C:/DDrive/Study%20-Home%20Learning/JavaSelenium/TestNGCucumberParallelMultiBrowserExtentReport/src/test/resources/features/RESTAPISCENARIOS.feature:9)
+... Removed 5 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace937942649", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace937942649'><pre>java.lang.AssertionError: Field value mismatch for address.city expected [Gwenborough] but found [null]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at stepdefinitions.RestApiStepDefinitions.validateResponseField(RestApiStepDefinitions.java:73)
+	at ✽.the response field &quot;address.city&quot; should be &quot;Gwenborough&quot;(file:///C:/DDrive/Study%20-Home%20Learning/JavaSelenium/TestNGCucumberParallelMultiBrowserExtentReport/src/test/resources/features/RESTAPISCENARIOS.feature:9)
+</pre></div></td>
+<td>22</td>
+<td>runners.TestNGCucumberRunner@6db9f5a4</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='runners.TestNGCucumberRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestNGCucumberRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Open login page", "Login Functionality"</td>
+<td></td>
+<td>29</td>
+<td>runners.TestNGCucumberRunner@6db9f5a4</td></tr>
+</table><p>
+</body>
+</html>

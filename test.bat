@@ -1,0 +1,1 @@
+mvn clean test -Dbrowser=chrome -DsuiteXmlFile=testng.xml -e
